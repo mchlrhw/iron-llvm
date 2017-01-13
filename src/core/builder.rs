@@ -285,6 +285,13 @@ impl Builder {
         }
     }
 
+    pub fn build_fdiv(&mut self, lhs: LLVMValueRef, rhs: LLVMValueRef, name: &str) -> LLVMValueRef {
+        let name = CString::new(name).unwrap();
+        unsafe {
+            LLVMBuildFDiv(self.to_ref(), lhs, rhs, name.as_ptr() as *const c_char)
+        }
+    }
+
     pub fn build_exact_sdiv(&mut self, lhs: LLVMValueRef, rhs: LLVMValueRef, name: &str) -> LLVMValueRef {
         let name = CString::new(name).unwrap();
         unsafe {
