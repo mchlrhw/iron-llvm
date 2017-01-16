@@ -9,11 +9,6 @@
 #![allow(non_upper_case_globals)]
 #![allow(unused_imports)]
 
-#![feature(convert)]
-
-#![feature(log_syntax)]
-#![feature(trace_macros)]
-
 extern crate libc;
 extern crate llvm_sys;
 
