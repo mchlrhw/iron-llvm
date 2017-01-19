@@ -1,6 +1,6 @@
 [package]
 
-name = "iron_llvm"
+name = "iron-llvm"
 version = "0.0.1"
 authors = ["Jauhien Piatlicki <jauhien@gentoo.org>"]
 build = "build.rs"
