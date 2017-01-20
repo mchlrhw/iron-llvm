@@ -11,25 +11,25 @@
 
 use llvm_sys::target::*;
 
-pub fn initilalize_native_target() -> bool {
+pub fn initialize_native_target() -> bool {
     unsafe {
         LLVM_InitializeNativeTarget() > 0
     }
 }
 
-pub fn initilalize_native_asm_parser() -> bool {
+pub fn initialize_native_asm_parser() -> bool {
     unsafe {
         LLVM_InitializeNativeAsmParser() > 0
     }
 }
 
-pub fn initilalize_native_asm_printer() -> bool {
+pub fn initialize_native_asm_printer() -> bool {
     unsafe {
         LLVM_InitializeNativeAsmPrinter() > 0
     }
 }
 
-pub fn initilalize_native_disassembler() -> bool {
+pub fn initialize_native_disassembler() -> bool {
     unsafe {
         LLVM_InitializeNativeDisassembler() > 0
     }
